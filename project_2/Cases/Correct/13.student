@@ -1,0 +1,7 @@
+program
+  int x;
+begin
+  x=1;
+  y=10;
+  z=100;
+  while !

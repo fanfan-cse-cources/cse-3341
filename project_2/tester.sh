@@ -18,7 +18,7 @@ do
 	echo "Running 0${value}.code"
 	timeout 5 ${runner} Cases/Correct/0${value}.code > Cases/Correct/0${value}.student
 	echo "Running diff with 0${value}.expected"
-	diff -q Correct/0${value}.expected Correct/0${value}.student
+	diff -q Cases/Correct/0${value}.expected Cases/Correct/0${value}.student
 done
 
 for value in {10..26}
@@ -27,7 +27,7 @@ do
 	echo "Running 0${value}.code"
 	timeout 5 ${runner} Cases/Correct/${value}.code > Cases/Correct/${value}.student
 	echo "Running diff with ${value}.expected"
-	diff -q Correct/0${value}.expected Correct/0${value}.student
+	diff -q Cases/Correct/${value}.expected Cases/Correct/${value}.student
 done
 
 echo "Running error cases:"
