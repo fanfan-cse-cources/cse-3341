@@ -1,0 +1,1 @@
+program int X, Y; begin X = 25; Y = 888888888; X = Y; write X; end

@@ -4,34 +4,33 @@ Core = Enum('Core',
   'PROGRAM,\
   BEGIN,\
   END,\
-  NEW,\
-  DEFINE,\
-  EXTENDS,\
-  CLASS,\
-  ENDCLASS,\
   INT,\
-  ENDFUNC,\
   IF,\
   THEN,\
   ELSE,\
   WHILE,\
-  ENDWHILE,\
-  ENDIF,\
+  LOOP,\
+  READ,\
+  WRITE,\
   SEMICOLON,\
-  LPAREN,\
-  RPAREN,\
   COMMA,\
   ASSIGN,\
   NEGATION,\
+  SLPAREN,\
+  SRPAREN,\
+  AND,\
   OR,\
-  EQUAL,\
-  LESS\
-  LESSEQUAL,\
+  LPAREN,\
+  RPAREN,\
   ADD,\
   SUB,\
   MULT,\
-  INPUT,\
-  OUTPUT,\
+  NOTEQUAL,\
+  EQUAL,\
+  LESS,\
+  GREATER,\
+  LESSEQUAL,\
+  GREATEREQUAL,\
   CONST,\
   ID,\
   EOF'

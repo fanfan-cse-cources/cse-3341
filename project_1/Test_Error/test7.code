@@ -1,0 +1,1 @@
+program int X, Y; xYZ = 4; begin X = 2; if X == Y write X end; end

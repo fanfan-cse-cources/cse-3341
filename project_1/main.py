@@ -1,24 +1,32 @@
-from Scanner import Scanner
+from Tokenizer import Tokenizer
 from Core import Core
 import sys
 
-def main():
-  # Initialize the scanner with the input file
-  S = Scanner(sys.argv[1])
 
-  # Print the token stream
-  while (S.currentToken() != Core.EOF):
-    # Print the current token, with any extra data needed
-    print(S.currentToken().name, end='')
-    if (S.currentToken() == Core.ID):
-      value = S.getID()
+def main():
+  # initialize the scanner with the input file
+  S = Tokenizer(sys.argv[1])
+
+  # print the token stream
+  while (S.getToken() != Core.EOF):
+    # print the current token, with any extra data needed
+    print(S.getToken().value, end=' ')
+    # debug(S)
+    # advance to the next token
+    S.skipToken();
+  print(Core.EOF.value)
+
+
+def debug(S):
+    # print token name and value for token ID/CONST
+    print(S.getToken().name, end=' ')
+    if (S.getToken() == Core.ID):
+      value = S.idName()
       print("[" + value + "]", end='');
-    elif (S.currentToken() == Core.CONST):
-      value = S.getCONST()
+    elif (S.getToken() == Core.CONST):
+      value = S.intVal()
       print("[" + str(value) + "]", end='');
     print();
-    # Advance to the next token
-    S.nextToken();
 
 
 if __name__ == "__main__":
