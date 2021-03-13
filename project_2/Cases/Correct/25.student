@@ -1,6 +1,0 @@
-program
-  int x;
-begin
-  n=5;
-  x=4;
-  while !

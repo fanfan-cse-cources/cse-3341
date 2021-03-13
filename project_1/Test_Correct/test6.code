@@ -1,1 +1,1 @@
-program int X; int Y; Y = 4; begin X = 2; if X == Y write X end; end
+program int X; int Y; begin X = 2; if (X == Y) then write X; end; end

@@ -1,4 +1,0 @@
-program
-	int x, y, z;
-	input x, y, z;
-end
