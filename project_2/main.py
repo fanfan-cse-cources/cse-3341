@@ -10,7 +10,7 @@ def main():
   interpreter = Interpreter(tokenizer)
   interpreter.parse()
   interpreter.validate()
-  # interpreter.print()
+  interpreter.print()
   interpreter.execute()
 
 

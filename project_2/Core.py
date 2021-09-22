@@ -33,5 +33,7 @@ Core = Enum('Core',
   GREATEREQUAL,\
   CONST,\
   ID,\
+  REPEAT,\
+  UNTIL,\
   EOF'
 )
